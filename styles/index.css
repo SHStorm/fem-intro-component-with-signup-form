@@ -216,6 +216,10 @@ body {
   font-weight: 700;
 }
 
+.agreement-link:hover {
+  color: hsl(0, 100%, 70%);
+}
+
 @media (min-width: 62.5rem) {
   .container {
     max-width: 125rem;
