@@ -191,7 +191,7 @@ body {
   font-weight: 700;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   .container {
     max-width: 125rem;
     padding: 0 5rem;
@@ -232,7 +232,7 @@ body {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 78.125rem) {
   .container {
     max-width: 144rem;
     padding: 0 16.5rem;
