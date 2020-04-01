@@ -148,7 +148,7 @@ body {
   border: 0.1rem solid #dedede;
 }
 
-.field-input:focus {
+.field-input:hover, .field-input:focus {
   border-color: #605b79;
 
   outline: none;
