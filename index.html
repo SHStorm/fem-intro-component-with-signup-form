@@ -11,6 +11,8 @@
   <link href="/styles/index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
+
+  <script src="/scripts/index.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -22,7 +24,7 @@
       </p>
     </section>
 
-    <form class="form">
+    <form id="form" class="form">
       <header class="form-header">
         <p><em class="trial-text">Try it free 7 days</em> then $20/mo. thereafter</p>
       </header>
@@ -32,34 +34,39 @@
           <li class="field-item">
             <label class="field">
               <span class="sr-only">First Name</span>
-              <input class="field-input" type="text" placeholder="First Name" required>
+              <input class="field-input" name="name" type="text" placeholder="First Name" required>
+              <strong class="error">First name cannot be empty</strong>
             </label>
           </li>
 
           <li class="field-item">
             <label class="field">
               <span class="sr-only">Last Name</span>
-              <input class="field-input" type="text" placeholder="Last Name" required>
+              <input class="field-input" name="surname" type="text" placeholder="Last Name" required>
+              <strong class="error">Last name cannot be empty</strong>
             </label>
           </li>
 
           <li class="field-item">
             <label class="field">
               <span class="sr-only">Email Address</span>
-              <input class="field-input" type="email" placeholder="Email Address" required>
+              <input class="field-input" name="email" type="email" placeholder="Email Address" required>
+              <strong class="error">Email address cannot be empty</strong>
             </label>
           </li>
 
           <li class="field-item">
             <label class="field">
               <span class="sr-only">Password</span>
-              <input class="field-input" type="password" placeholder="Password" required>
+              <input class="field-input" name="password" type="password" placeholder="Password" required>
+              <strong class="error">Password cannot be empty</strong>
             </label>
           </li>
         </ul>
 
         <button class="button">Claim your free trial</button>
-        <strong class="agreement">By clicking the button, you are agreeing to our <a class="agreement-link" href="#">Terms and Services</a></strong>
+        <strong class="agreement">By clicking the button, you are agreeing to our <a class="agreement-link" href="#">Terms
+          and Services</a></strong>
       </div>
     </form>
   </div>

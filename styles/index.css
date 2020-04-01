@@ -154,6 +154,27 @@ body {
   outline: none;
 }
 
+.field-input.invalid {
+  border-color: hsl(0, 100%, 74%);
+  background: url('/images/icon-error.svg') no-repeat center right;
+  background-origin: content-box;
+}
+
+.field-input.invalid + .error {
+  display: block;
+}
+
+.error {
+  display: none;
+  margin-top: 0.5rem;
+
+  color: hsl(0, 100%, 74%);
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: right;
+}
+
 .button {
   display: flex;
   justify-content: center;
